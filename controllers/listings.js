@@ -55,9 +55,17 @@ async function handleCreateNewListing(req, res, next) {
     const location = newListing.location;
 
     const coordinates = await axios.get(
-        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
-            location
-        )}&limit=1`
+        "https://nominatim.openstreetmap.org/search",
+        {
+            params: {
+                format: "json",
+                q: location,
+                limit: 1,
+            },
+            headers: {
+                "User-Agent": "airbnb-clone/1.0",
+            },
+        },
     );
 
     newListing.coordinates.push(coordinates.data[0].lat);
