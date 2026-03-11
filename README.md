@@ -42,6 +42,16 @@ This project replicates the core features of a property rental marketplace inclu
 
 ---
 
+## 📸 Screenshots
+
+![Home](screenshots/home.png)
+
+![Create a Listing](screenshots/create-listing.png)
+
+![Reviews](screenshots/reviews.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 ### 🎨 Frontend
@@ -67,7 +77,3 @@ This project replicates the core features of a property rental marketplace inclu
 - Cloudinary (image storage)
 - connect-mongo (session storage)
 - OpenStreetMap Nominatim API (geocoding)
-
----
-
-## 📸 Screenshots
